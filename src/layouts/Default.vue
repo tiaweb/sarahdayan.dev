@@ -48,7 +48,10 @@
           :items="items"
         />
       </div>
-      <social-links class="w-full mt-32 md:mt-72" />
+      <div class="flex items-center w-full mt-32 md:mt-72">
+        <g-image alt="Sarah Dayan's headshot" src="~/assets/images/sarah-dayan.jpg" class="w-48 h-48 mr-32 rounded-full" />
+        <social-links />
+      </div>
     </div>
     <div
       class="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0"

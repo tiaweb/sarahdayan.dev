@@ -1,6 +1,6 @@
 <template>
-  <ul class="flex -mx-32 text-zenith">
-    <li v-for="({ link, label, icon }, id) in links" :key="id" class="mx-32">
+  <ul class="flex -mx-16 text-zenith">
+    <li v-for="({ link, label, icon }, id) in links" :key="id" class="mx-16">
       <a class="flex items-center" :href="link" rel="noopener" target="_blank">
         <component
           :is="icon"
