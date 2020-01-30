@@ -9,6 +9,15 @@
     "date": "2020-03-02"
   },
   {
+    "title": "Test-Driven Development with Vue.js",
+    "event": "Vue.js Amsterdam",
+    "location": {
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "date": "2020-02-20"
+  },
+  {
     "title": "In Defense of Utility-First CSS",
     "event": "dotCSS",
     "location": {
