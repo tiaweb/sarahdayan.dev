@@ -59,10 +59,10 @@
       <slot />
     </div>
     <div
-      class="fixed bottom-0 left-0 hidden w-full h-32 pointer-events-none md:block gradient-y-transparent-night"
+      class="fixed bottom-0 left-0 w-full h-32 pointer-events-none gradient-y-transparent-night"
     />
     <div
-      class="fixed top-0 left-0 hidden w-full h-32 pointer-events-none md:block gradient-y-night-transparent"
+      class="fixed top-0 left-0 w-full h-32 pointer-events-none gradient-y-night-transparent"
     />
   </div>
 </template>
