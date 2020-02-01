@@ -49,7 +49,11 @@
         />
       </div>
       <div class="flex items-center w-full mt-32 md:mt-72">
-        <g-image alt="Sarah Dayan's headshot" src="~/assets/images/sarah-dayan.jpg" class="w-48 h-48 mr-32 rounded-full" />
+        <g-image
+          alt="Sarah Dayan's headshot"
+          src="~/assets/images/sarah-dayan.jpg"
+          class="w-48 h-48 mr-32 rounded-full"
+        />
         <social-links />
       </div>
     </div>
