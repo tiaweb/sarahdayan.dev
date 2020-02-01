@@ -108,30 +108,9 @@ export default Vue.extend({
   },
   data() {
     return {
-      scrollPosition: 0,
-      ticking: false,
       visibleSections: [],
       shouldShowDesignerLine: false
     };
-  },
-  computed: {
-    scroll() {
-      return 0.05 * this.scrollPosition;
-    }
-  },
-  created() {
-    if (process.isClient) {
-      window.addEventListener("scroll", () => {
-        if (!this.ticking) {
-          window.requestAnimationFrame(() => {
-            this.scrollPosition = parseInt(window.scrollY);
-            this.ticking = false;
-          });
-
-          this.ticking = true;
-        }
-      });
-    }
   },
   methods: {
     onVisibilityChange(index) {
