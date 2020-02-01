@@ -1,0 +1,26 @@
+:root {
+  --color-night: #151515;
+  --color-night-rgb: 21, 21, 21;
+  --color-dusk: #202022;
+  --color-sunset: #686869;
+  --color-dawn: #949495;
+  --color-sunrise: #f5f5fa;
+  --color-zenith: #ffffff;
+  --color-zenith-rgb: 255, 255, 255;
+}
+
+.theme-dark {
+  --color-background: var(--color-night);
+  --color-background-rgb: var(--color-night-rgb);
+  --color-primary: var(--color-zenith);
+  --color-card: var(--color-dusk);
+  --color-secondary: var(--color-dawn);
+}
+
+.theme-light {
+  --color-background: var(--color-zenith);
+  --color-background-rgb: var(--color-zenith-rgb);
+  --color-primary: var(--color-dusk);
+  --color-card: var(--color-sunrise);
+  --color-secondary: var(--color-sunset);
+}

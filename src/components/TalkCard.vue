@@ -1,11 +1,11 @@
 <template>
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <div
-      class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"
+      class="flex flex-col justify-between w-full h-full p-40 transition min-h-inherit bg-card md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important"
     >
       <header>
         <h4
-          class="text-xs font-bold tracking-widest uppercase text-zenith"
+          class="text-xs font-bold tracking-widest uppercase text-primary"
           itemprop="name"
         >
           {{ talk.event }}
@@ -35,7 +35,7 @@
       </header>
       <div class="flex flex-col mt-24">
         <h3
-          class="text-lg font-semibold leading-tight text-zenith"
+          class="text-lg font-semibold leading-tight text-primary"
           itemprop="name"
         >
           {{ talk.title }}
@@ -44,13 +44,13 @@
           <ul class="flex -mx-8">
             <li v-for="{ label, link } in talk.links" :key="label" class="mx-8">
               <a
-                class="flex items-center mt-px text-zenith"
+                class="flex items-center mt-px text-primary"
                 :href="link"
                 target="_blank"
                 rel="noopener"
               >
                 <span>{{ label }}</span>
-                <span class="block w-16 p-2 ml-4 text-dawn">
+                <span class="block w-16 p-2 ml-4 text-secondary">
                   <external-link-icon
                     aria-hidden="true"
                     class="flex-none stroke-current"

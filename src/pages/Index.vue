@@ -52,7 +52,7 @@
       >
         Design by
         <a
-          class="text-sunrise hover:text-zenith transition hover:underline"
+          class="text-primary transition hover:underline"
           href="https://dribbble.com/NicolasMzrd"
           target="_blank"
           rel="noopener"

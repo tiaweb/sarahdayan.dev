@@ -4,14 +4,14 @@
       <li v-for="(item, index) in navigation" :key="index" class="md:my-16">
         <a
           v-smooth-scroll="{ duration: 500, updateHistory: false }"
-          class="inline-flex items-center hover:text-zenith transition group"
-          :class="{ 'text-zenith': item.active }"
+          class="inline-flex items-center hover:text-primary transition group"
+          :class="{ 'text-primary': item.active }"
           :href="item.link"
         >
           <span class="text-xs tracking-wide">{{ getNumber(index) }}</span>
           <span
-            class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"
-            :class="{ 'w-48 bg-zenith': item.active }"
+            class="inline-block h-px mx-16 -mt-px group-hover:w-48 group-hover:bg-primary transition"
+            :class="[item.active ? 'w-48 bg-primary' : 'w-24 bg-secondary']"
           ></span>
           <span class="text-xs tracking-widest uppercase">{{
             item.label

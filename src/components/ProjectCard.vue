@@ -1,15 +1,15 @@
 <template>
   <article
-    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x"
+    class="transition bg-card md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x"
     itemscope
     itemtype="http://schema.org/CreativeWork"
   >
     <a class="block p-40" :href="project.link" target="_blank" rel="noopener">
-      <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+      <p class="text-xs font-bold tracking-widest uppercase text-primary">
         {{ project.language }}
       </p>
       <h3
-        class="mt-8 text-lg font-semibold leading-tight text-zenith"
+        class="mt-8 text-lg font-semibold leading-tight text-primary"
         itemprop="name"
       >
         {{ capitalize(project.title) }}

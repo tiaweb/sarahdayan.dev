@@ -1,13 +1,13 @@
 <template>
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <a
-      class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2"
+      class="flex transition md:items-center md:group-hover:opacity-50 md:hover:opacity-important group-2"
       :href="interview.link"
       target="_blank"
       rel="noopener"
     >
       <div
-        class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition"
+        class="flex items-center justify-center flex-none mr-24 transition rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-card text-primary md:group-2-hover:scale-11/10x"
       >
         <component
           :is="getIcon(interview.type)"
@@ -18,7 +18,7 @@
       </div>
       <div>
         <h3
-          class="text-lg font-semibold leading-snug md:leading-tight text-zenith"
+          class="text-lg font-semibold leading-snug md:leading-tight text-primary"
           itemprop="name"
         >
           {{ interview.title }}
@@ -30,7 +30,7 @@
           </span>
         </p>
         <time
-          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith"
+          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-primary"
           itemprop="datePublished"
           :datetime="interview.time"
           :content="interview.time"

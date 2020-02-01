@@ -25,7 +25,6 @@
     "gridsome-plugin-svg": "^0.0.10",
     "gridsome-plugin-tailwindcss": "^2.2.32",
     "gridsome-plugin-typescript": "^0.4.0",
-    "hex-to-rgb": "^1.0.1",
     "postcss-selector-parser": "^6.0.2",
     "prettier": "^1.19.1",
     "ts-loader": "^6.2.1",

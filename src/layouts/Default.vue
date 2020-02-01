@@ -1,7 +1,7 @@
 <template>
   <div
     v-resize:debounce="onResize"
-    class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row"
+    class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-secondary md:flex-row"
   >
     <top-bar :shift="isIntroVisible" />
     <div
@@ -11,7 +11,7 @@
       <div class="flex flex-col">
         <div>
           <h1
-            class="text-2xl font-bold leading-tight lg:text-4xl lg:leading-none text-zenith"
+            class="text-2xl font-bold leading-tight lg:text-4xl lg:leading-none text-primary"
           >
             Hello, I’m Sarah Dayan.
           </h1>
@@ -20,14 +20,14 @@
               I’m a Staff Software Engineer currently working as Tech Lead of
               the Doc Squad at
               <a
-                class="underline text-zenith"
+                class="underline text-primary"
                 href="https://www.algolia.com/"
                 target="_blank"
                 rel="noopener"
                 >Algolia</a
               >. I mostly do front-end development, and I’m a
               <a
-                class="underline text-zenith"
+                class="underline text-primary"
                 href="https://vuejs.org/"
                 rel="noopener"
                 >Vue.js</a
@@ -35,7 +35,7 @@
               and CSS nerd. I can't shut up about test-driven development and
               utility-first CSS. I also share what I learn on my blog
               <a
-                class="underline text-zenith"
+                class="underline text-primary"
                 href="http://frontstuff.io"
                 target="_blank"
                 rel="noopener"
@@ -65,10 +65,10 @@
       <slot />
     </div>
     <div
-      class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"
+      class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-to-background"
     />
     <div
-      class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"
+      class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-background-to-transparent"
     />
   </div>
 </template>
@@ -84,6 +84,8 @@ query {
 <script>
 import Vue from "vue";
 
+import "@/assets/css/colors.css";
+
 import { bus } from "@/main";
 
 import ScrollSpy from "@/partials/ScrollSpy";
@@ -93,7 +95,7 @@ import SocialLinks from "@/partials/SocialLinks";
 export default Vue.extend({
   metaInfo: {
     bodyAttrs: {
-      class: "bg-night overflow-x-hidden"
+      class: "theme-dark bg-background overflow-x-hidden"
     }
   },
   components: {
