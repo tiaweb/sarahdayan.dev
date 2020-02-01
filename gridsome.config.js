@@ -8,6 +8,7 @@ const siteName = "Sarah Dayan";
 
 module.exports = {
   siteName,
+  siteUrl: "https://sarahdayan.dev",
   titleTemplate: siteName,
   plugins: [
     {
@@ -24,6 +25,9 @@ module.exports = {
       options: {
         goesBothWays: true
       }
+    },
+    {
+      use: "@gridsome/plugin-sitemap"
     }
   ]
 };
