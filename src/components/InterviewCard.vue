@@ -1,13 +1,13 @@
 <template>
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <a
-      class="flex md:items-center group-hover:opacity-50 hover:opacity-important transition group-2"
+      class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2"
       :href="interview.link"
       target="_blank"
       rel="noopener"
     >
       <div
-        class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith group-2-hover:scale-11/10x transition"
+        class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition"
       >
         <component
           :is="getIcon(interview.type)"

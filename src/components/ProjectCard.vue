@@ -1,6 +1,6 @@
 <template>
   <article
-    class="bg-dusk transition group-hover:opacity-50 hover:opacity-important hover:scale-11/10x"
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x"
     itemscope
     itemtype="http://schema.org/CreativeWork"
   >

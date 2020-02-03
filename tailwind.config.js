@@ -47,7 +47,7 @@ module.exports = {
     }
   },
   variants: {
-    opacity: ["group-hover", "hover"],
+    opacity: ["group-hover", "hover", "responsive"],
     backgroundColor: ["group-hover"],
     width: ["responsive", "hover", "focus", "group-hover"]
   },

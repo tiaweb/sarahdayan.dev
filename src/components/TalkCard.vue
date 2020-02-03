@@ -1,7 +1,7 @@
 <template>
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <div
-      class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk group-hover:opacity-50 hover:scale-11/10x hover:opacity-important transition"
+      class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"
     >
       <header>
         <h3
