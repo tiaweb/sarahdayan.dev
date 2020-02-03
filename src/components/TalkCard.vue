@@ -4,12 +4,12 @@
       class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"
     >
       <header>
-        <h3
+        <h4
           class="text-xs font-bold tracking-widest uppercase text-zenith"
           itemprop="name"
         >
           {{ talk.event }}
-        </h3>
+        </h4>
         <div class="flex flex-col mt-8">
           <p itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span
@@ -34,12 +34,12 @@
         </div>
       </header>
       <div class="flex flex-col mt-24">
-        <h2
+        <h3
           class="text-lg font-semibold leading-tight text-zenith"
           itemprop="name"
         >
           {{ talk.title }}
-        </h2>
+        </h3>
         <footer v-if="talk.links.length" class="mt-16">
           <ul class="flex -mx-8">
             <li v-for="{ label, link } in talk.links" :key="label" class="mx-8">

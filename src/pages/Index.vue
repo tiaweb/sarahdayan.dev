@@ -6,21 +6,42 @@
         v-observe-visibility="onVisibilityChange(0)"
         class="md:pt-88 md:-mt-96"
       >
-        <all-projects :items="$page.repositories.edges" />
+        <h2
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+        >
+          Projects
+        </h2>
+        <all-projects
+          class="pt-32 pb-40 md:py-0"
+          :items="$page.repositories.edges"
+        />
       </div>
       <div
         id="talks"
         v-observe-visibility="onVisibilityChange(1)"
-        class="pt-80 md:pt-88"
+        class="md:pt-88"
       >
-        <all-talks :items="$page.talks.edges" />
+        <h2
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+        >
+          Talks
+        </h2>
+        <all-talks class="pt-32 pb-40 md:py-0" :items="$page.talks.edges" />
       </div>
       <div
         id="interviews"
         v-observe-visibility="onVisibilityChange(2)"
-        class="mb-48 pt-80 md:pt-8"
+        class="mb-48 md:pt-8"
       >
-        <all-interviews class="md:mt-72" :items="$page.interviews.edges" />
+        <h2
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+        >
+          Interviews
+        </h2>
+        <all-interviews
+          class="pt-80 md:pt-0 md:mt-72"
+          :items="$page.interviews.edges"
+        />
       </div>
       <p
         v-observe-visibility="showDesignerLine"

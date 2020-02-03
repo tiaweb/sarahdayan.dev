@@ -69,18 +69,37 @@ module.exports = {
         ".scale-2x": {
           transform: "scale(2)"
         },
+        ".shift-0": {
+          transform: `translateY(${spacing["0"]})`
+        },
         ".shift-y-16": {
           transform: `translateY(${spacing["16"]})`
+        },
+        ".-shift-y-64": {
+          transform: `translateY(-${spacing["64"]})`
+        },
+        ".-shift-y-96": {
+          transform: `translateY(-${spacing["96"]})`
         },
         ".gradient-y-transparent-night": {
           background: `linear-gradient(to bottom, rgba(${hexToRgb(
             colors.night
           ).join(", ")}, 0), ${colors.night})`
         },
+        ".gradient-y-transparent-dusk": {
+          background: `linear-gradient(to bottom, rgba(${hexToRgb(
+            colors.dusk
+          ).join(", ")}, 0), ${colors.dusk})`
+        },
         ".gradient-y-night-transparent": {
           background: `linear-gradient(to top, rgba(${hexToRgb(
             colors.night
           ).join(", ")}, 0), ${colors.night})`
+        },
+        ".gradient-y-dusk-transparent": {
+          background: `linear-gradient(to top, rgba(${hexToRgb(
+            colors.dusk
+          ).join(", ")}, 0), ${colors.dusk})`
         }
       };
 

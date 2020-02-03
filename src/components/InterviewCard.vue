@@ -17,12 +17,12 @@
         />
       </div>
       <div>
-        <h2
+        <h3
           class="text-lg font-semibold leading-snug md:leading-tight text-zenith"
           itemprop="name"
         >
           {{ interview.title }}
-        </h2>
+        </h3>
         <p class="mt-8 mb-2">
           <span itemprop="publisher">{{ interview.platform }}</span> — with
           <span itemprop="author">

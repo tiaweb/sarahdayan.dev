@@ -8,12 +8,12 @@
       <p class="text-xs font-bold tracking-widest uppercase text-zenith">
         {{ project.language }}
       </p>
-      <h2
+      <h3
         class="mt-8 text-lg font-semibold leading-tight text-zenith"
         itemprop="name"
       >
         {{ capitalize(project.title) }}
-      </h2>
+      </h3>
       <p class="mt-8">{{ project.description }}</p>
       <div class="flex items-center mt-16">
         <div class="w-16 h-16 p-2 mr-4">

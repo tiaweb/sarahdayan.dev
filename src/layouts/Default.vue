@@ -3,7 +3,9 @@
     v-resize:debounce="onResize"
     class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row"
   >
+    <top-bar :shift="isIntroVisible" />
     <div
+      v-observe-visibility="onIntroVisibilityChange"
       class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-88 lg:pl-88 md:pr-0"
     >
       <div class="flex flex-col">
@@ -63,10 +65,10 @@
       <slot />
     </div>
     <div
-      class="fixed bottom-0 left-0 w-full h-32 pointer-events-none gradient-y-transparent-night"
+      class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"
     />
     <div
-      class="fixed top-0 left-0 w-full h-32 pointer-events-none gradient-y-night-transparent"
+      class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"
     />
   </div>
 </template>
@@ -85,6 +87,7 @@ import Vue from "vue";
 import { bus } from "@/main";
 
 import ScrollSpy from "@/partials/ScrollSpy";
+import TopBar from "@/partials/TopBar";
 import SocialLinks from "@/partials/SocialLinks";
 
 export default Vue.extend({
@@ -95,10 +98,12 @@ export default Vue.extend({
   },
   components: {
     ScrollSpy,
-    SocialLinks
+    SocialLinks,
+    TopBar
   },
   data() {
     return {
+      isIntroVisible: true,
       items: [
         { label: "Projects", link: "#projects" },
         { label: "Talks", link: "#talks" },
@@ -115,6 +120,9 @@ export default Vue.extend({
   methods: {
     onResize({ offsetWidth }) {
       bus.$emit("resize:window", offsetWidth);
+    },
+    onIntroVisibilityChange(isVisible) {
+      this.isIntroVisible = isVisible;
     }
   }
 });
