@@ -8,7 +8,7 @@ export const bus = new Vue();
 const title = "Sarah Dayan";
 const description = [
   "Sarah Dayan",
-  "Senior Software Engineer at Algolia",
+  "Staff Software Engineer at Algolia",
   "Creator of Dinero.js",
   "TypeScript, JavaScript, Vue.js, CSS"
 ].join(" | ");

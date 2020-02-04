@@ -17,7 +17,7 @@
           </h1>
           <div class="leading-loose">
             <p class="mt-32">
-              I’m a Senior Software Engineer currently working as Tech Lead of
+              I’m a Staff Software Engineer currently working as Tech Lead of
               the Doc Squad at
               <a
                 class="underline text-zenith"
