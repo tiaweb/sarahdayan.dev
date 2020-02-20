@@ -84,26 +84,6 @@ module.exports = {
         ".-shift-y-96": {
           transform: `translateY(-${spacing["96"]})`
         },
-        ".gradient-y-transparent-night": {
-          background: `linear-gradient(to bottom, rgba(${hexToRgb(
-            colors.night
-          ).join(", ")}, 0), ${colors.night})`
-        },
-        ".gradient-y-transparent-dusk": {
-          background: `linear-gradient(to bottom, rgba(${hexToRgb(
-            colors.dusk
-          ).join(", ")}, 0), ${colors.dusk})`
-        },
-        ".gradient-y-night-transparent": {
-          background: `linear-gradient(to top, rgba(${hexToRgb(
-            colors.night
-          ).join(", ")}, 0), ${colors.night})`
-        },
-        ".gradient-y-dusk-transparent": {
-          background: `linear-gradient(to top, rgba(${hexToRgb(
-            colors.dusk
-          ).join(", ")}, 0), ${colors.dusk})`
-        },
         ".gradient-y-background-to-transparent": {
           background:
             "linear-gradient(to bottom, var(--color-background), rgba(var(--color-background-rgb), 0))"
@@ -111,6 +91,14 @@ module.exports = {
         ".gradient-y-transparent-to-background": {
           background:
             "linear-gradient(to top, var(--color-background), rgba(var(--color-background-rgb), 0))"
+        },
+        ".gradient-y-card-to-transparent": {
+          background:
+            "linear-gradient(to bottom, var(--color-card), rgba(var(--color-card-rgb), 0))"
+        },
+        ".gradient-y-transparent-to-card": {
+          background:
+            "linear-gradient(to top, var(--color-card), rgba(var(--color-card-rgb), 0))"
         }
       };
 

@@ -7,7 +7,7 @@
         class="md:pt-88 md:-mt-96"
       >
         <h2
-          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-primary"
         >
           Projects
         </h2>
@@ -22,7 +22,7 @@
         class="md:pt-88"
       >
         <h2
-          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-primary"
         >
           Talks
         </h2>
@@ -34,7 +34,7 @@
         class="mb-48 md:pt-8"
       >
         <h2
-          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith"
+          class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-primary"
         >
           Interviews
         </h2>
@@ -48,11 +48,11 @@
         :class="[
           shouldShowDesignerLine ? 'opacity-75' : 'opacity-0 shift-y-16'
         ]"
-        class="text-sm mt-104 ml-104 md:ml-160 transition"
+        class="text-sm transition mt-104 ml-104 md:ml-160"
       >
         Design by
         <a
-          class="text-primary transition hover:underline"
+          class="transition text-primary hover:underline"
           href="https://dribbble.com/NicolasMzrd"
           target="_blank"
           rel="noopener"

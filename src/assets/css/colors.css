@@ -2,9 +2,11 @@
   --color-night: #151515;
   --color-night-rgb: 21, 21, 21;
   --color-dusk: #202022;
+  --color-dusk-rgb: 32, 32, 34;
   --color-sunset: #686869;
   --color-dawn: #949495;
   --color-sunrise: #f5f5fa;
+  --color-sunrise-rgb: 245, 245, 250;
   --color-zenith: #ffffff;
   --color-zenith-rgb: 255, 255, 255;
 }
@@ -14,6 +16,7 @@
   --color-background-rgb: var(--color-night-rgb);
   --color-primary: var(--color-zenith);
   --color-card: var(--color-dusk);
+  --color-card-rgb: var(--color-dusk-rgb);
   --color-secondary: var(--color-dawn);
 }
 
@@ -22,5 +25,6 @@
   --color-background-rgb: var(--color-zenith-rgb);
   --color-primary: var(--color-dusk);
   --color-card: var(--color-sunrise);
+  --color-card-rgb: var(--color-sunrise-rgb);
   --color-secondary: var(--color-sunset);
 }
