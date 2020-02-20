@@ -57,6 +57,13 @@
           class="w-48 h-48 mr-32 rounded-full"
         />
         <social-links />
+        <button @click="toggleMode" class="w-24 ml-24 text-primary">
+          <sun-icon aria-hidden="true" class="flex-none stroke-current" :class="{ hidden: isLight }" />
+          <moon-icon aria-hidden="true" class="flex-none stroke-current" :class="{ hidden: isDark }" />
+          <span class="sr-only">
+            Switch to {{ isDark ? 'light' : 'dark' }} mode
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -92,16 +99,25 @@ import ScrollSpy from "@/partials/ScrollSpy";
 import TopBar from "@/partials/TopBar";
 import SocialLinks from "@/partials/SocialLinks";
 
+import SunIcon from "@/assets/icons/sun.svg?inline";
+import MoonIcon from "@/assets/icons/moon.svg?inline";
+
+const themes = ["theme-dark", "theme-light"];
+
 export default Vue.extend({
-  metaInfo: {
-    bodyAttrs: {
-      class: "theme-dark bg-background overflow-x-hidden"
-    }
+  metaInfo() {
+    return {
+      bodyAttrs: {
+        class: `${themes[this.mode]} bg-background overflow-x-hidden`
+      }
+    };
   },
   components: {
     ScrollSpy,
     SocialLinks,
-    TopBar
+    TopBar,
+    SunIcon,
+    MoonIcon
   },
   data() {
     return {
@@ -111,8 +127,17 @@ export default Vue.extend({
         { label: "Talks", link: "#talks" },
         { label: "Interviews", link: "#interviews" }
       ],
-      active: 0
+      active: 0,
+      mode: 0
     };
+  },
+  computed: {
+    isLight() {
+      return this.mode === 1;
+    },
+    isDark() {
+      return this.mode === 0;
+    }
   },
   created() {
     bus.$on("update:scrollspy", index => {
@@ -125,6 +150,9 @@ export default Vue.extend({
     },
     onIntroVisibilityChange(isVisible) {
       this.isIntroVisible = isVisible;
+    },
+    toggleMode() {
+      this.mode = this.mode === 0 ? 1 : 0;
     }
   }
 });
