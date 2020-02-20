@@ -8177,6 +8177,11 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
+sewing@0.0.53:
+  version "0.0.53"
+  resolved "https://registry.yarnpkg.com/sewing/-/sewing-0.0.53.tgz#721150cdd340b948de5a88eb452961947a0373ee"
+  integrity sha512-brYkfTBn6D7jumo66dHfebGIJhbdVkm82xG1QtDZw4oEHlIlLPnnU2PkYNP9bOdYmwghzR+laxYVAEIA/HmN0A==
+
 sha.js@^2.4.0, sha.js@^2.4.8:
   version "2.4.11"
   resolved "https://registry.yarnpkg.com/sha.js/-/sha.js-2.4.11.tgz#37a5cf0b81ecbc6943de109ba2960d1b26584ae7"
@@ -9387,6 +9392,13 @@ vue-loader@^15.7.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-localstorage2@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/vue-localstorage2/-/vue-localstorage2-0.0.6.tgz#fabc8d49a7cc27113030b3729ba60150719a44c6"
+  integrity sha512-KwwVLd61BVrLycelQrAl32xmRE8NT7tPII+vh152PYnH+XX9v6gs3T+PjVK8TsSwpSzld5vzQzkV3gAJ3IVsXg==
+  dependencies:
+    sewing "0.0.53"
 
 vue-meta@^2.2.2:
   version "2.3.2"

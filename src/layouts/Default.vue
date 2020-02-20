@@ -128,7 +128,7 @@ export default Vue.extend({
         { label: "Interviews", link: "#interviews" }
       ],
       active: 0,
-      mode: 0
+      mode: this.$localStorage.get("mode") || 0
     };
   },
   computed: {
@@ -153,6 +153,7 @@ export default Vue.extend({
     },
     toggleMode() {
       this.mode = this.mode === 0 ? 1 : 0;
+      this.$localStorage.set("mode", this.mode);
     }
   }
 });

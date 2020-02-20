@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
+    "vue-localstorage2": "^0.0.6",
     "vue-observe-visibility": "^0.4.6",
     "vue-resize-directive": "^1.2.0",
     "vue2-smooth-scroll": "^1.2.0"
