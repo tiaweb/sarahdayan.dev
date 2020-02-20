@@ -128,7 +128,7 @@ export default Vue.extend({
         { label: "Interviews", link: "#interviews" }
       ],
       active: 0,
-      mode: this.$localStorage.get("mode") || 0
+      mode: process.isClient ? this.$localStorage.get("mode") || 0 : 0
     };
   },
   computed: {
