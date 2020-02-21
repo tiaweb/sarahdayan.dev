@@ -15,7 +15,13 @@
       "city": "Amsterdam",
       "country": "The Netherlands"
     },
-    "date": "2020-02-20"
+    "date": "2020-02-21",
+    "links": [
+      {
+        "label": "Slides",
+        "link": "https://noti.st/sarahdayan/q0xtRN/test-driven-development-with-vue-js"
+      }
+    ]
   },
   {
     "title": "In Defense of Utility-First CSS",
