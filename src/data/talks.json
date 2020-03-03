@@ -1,15 +1,6 @@
 [
   {
     "title": "Test-Driven Development with Vue.js",
-    "event": "VueConf US",
-    "location": {
-      "city": "Austin, TX",
-      "country": "USA"
-    },
-    "date": "2020-03-02"
-  },
-  {
-    "title": "Test-Driven Development with Vue.js",
     "event": "Vue.js Amsterdam",
     "location": {
       "city": "Amsterdam",
