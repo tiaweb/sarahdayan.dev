@@ -26,21 +26,29 @@ module.exports = ({ loadSource }) => {
       interviewCollection.addNode(item);
     }
 
-    const repositories = await axios(
+    const ownRepositories = await axios(
       "https://api.github.com/users/sarahdayan/repos"
     );
-
-    for (const repository of repositories.data) {
-      const item = selectedRepositories.find(
-        ({ name }) => name === repository.name
-      );
-      if (item) {
-        const enhancedRepository = {
-          ...repository,
-          featured: item.featured
-        };
-        repositoryCollection.addNode(enhancedRepository);
+    
+    const dineroRepositories = await axios(
+      "https://api.github.com/users/sarahdayan/repos"
+    );
+    
+    const allRepositories = [ownRepositories, dineroRepositories];
+    
+    allRepositories.forEach(repositories => {
+      for (const repository of repositories.data) {
+        const item = selectedRepositories.find(
+          ({ name }) => name === repository.name
+        );
+        if (item) {
+          const enhancedRepository = {
+            ...repository,
+            featured: item.featured
+          };
+          repositoryCollection.addNode(enhancedRepository);
+        }
       }
-    }
+    });
   });
 };
