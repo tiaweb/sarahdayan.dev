@@ -31,7 +31,7 @@ module.exports = ({ loadSource }) => {
     );
     
     const dineroRepositories = await axios(
-      "https://api.github.com/users/sarahdayan/repos"
+      "https://api.github.com/users/dinerojs/repos"
     );
     
     const allRepositories = [ownRepositories, dineroRepositories];
