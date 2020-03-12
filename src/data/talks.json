@@ -9,6 +9,10 @@
     "date": "2020-02-21",
     "links": [
       {
+        "label": "Video",
+        "link": "https://youtu.be/OPWcqgqiJao"
+      },
+      {
         "label": "Slides",
         "link": "https://noti.st/sarahdayan/q0xtRN/test-driven-development-with-vue-js"
       }
