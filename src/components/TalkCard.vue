@@ -11,7 +11,7 @@
           {{ talk.event }}
         </h4>
         <div class="flex flex-col mt-8">
-          <p itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <p v-if="talk.location" itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span
               itemprop="address"
               itemscope
@@ -24,6 +24,7 @@
               <span itemprop="addressCountry">{{ talk.location.country }}</span>
             </span>
           </p>
+          <p v-else-if="talk.isOnline">Online</p>
           <time
             class="inline-block"
             itemprop="startDate"

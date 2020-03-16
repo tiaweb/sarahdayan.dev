@@ -87,6 +87,7 @@ query {
           city
           country
         }
+        isOnline
         date
         links {
           label
