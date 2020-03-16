@@ -1,5 +1,11 @@
 [
   {
+    "title": "Why Javascript Numbers Are Weird (And How to Fix It)",
+    "event": "Frontend Love Meetup",
+    "isOnline": true,
+    "date": "2020-03-19"
+  },
+  {
     "title": "Test-Driven Development with Vue.js",
     "event": "Vue.js Amsterdam",
     "location": {
