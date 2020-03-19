@@ -3,7 +3,17 @@
     "title": "Why Javascript Numbers Are Weird (And How to Fix It)",
     "event": "Frontend Love Meetup",
     "isOnline": true,
-    "date": "2020-03-19"
+    "date": "2020-03-19",
+    "links": [
+      {
+        "label": "Video",
+        "link": "https://youtu.be/Wq2AqONg7rs"
+      },
+      {
+        "label": "Slides",
+        "link": "https://noti.st/sarahdayan/BAyJrr/why-javascript-numbers-are-weird-and-how-to-fix-it"
+      }
+    ]
   },
   {
     "title": "Test-Driven Development with Vue.js",
