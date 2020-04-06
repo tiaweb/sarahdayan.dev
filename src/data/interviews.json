@@ -1,5 +1,14 @@
 [
   {
+    "title": "Test Driven Development",
+    "link": "https://enjoythevue.io/episodes/11/",
+    "platform": "Enjoy the Vue",
+    "hosts": ["Ben Hong", "Ari Clark", "Tessa"],
+    "date": "2020-04-06",
+    "type": "podcast",
+    "featured": false
+  },
+  {
     "title": "Journey to JavaScript development",
     "link": "https://www.youtube.com/watch?v=62C-E6WL0_A",
     "platform": "Prismic Studio",
