@@ -25,8 +25,8 @@ export default {
   props: {
     shift: {
       type: Boolean,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>

@@ -10,44 +10,44 @@ const description = [
   "Sarah Dayan",
   "Staff Software Engineer at Algolia",
   "Creator of Dinero.js",
-  "TypeScript, JavaScript, Vue.js, CSS"
+  "TypeScript, JavaScript, Vue.js, CSS",
 ].join(" | ");
 
 const metadata = [
   {
     name: "description",
-    content: description
+    content: description,
   },
   {
     name: "author",
-    content: title
+    content: title,
   },
   {
     name: "designer",
-    content: "Nicolas Meuzard"
-  }
+    content: "Nicolas Meuzard",
+  },
 ];
 
 const openGraph = [
   {
     name: "og:title",
-    content: title
+    content: title,
   },
   {
     name: "og:site_name",
-    content: title
+    content: title,
   },
   {
     name: "og:image",
-    content: "https://sarahdayan.dev/sarah-dayan.jpg"
+    content: "https://sarahdayan.dev/sarah-dayan.jpg",
   },
   {
     name: "og:description",
-    content: description
-  }
+    content: description,
+  },
 ];
 
-export default function(Vue, { head, isClient }) {
+export default function (Vue, { head, isClient }) {
   if (isClient) {
     const vueSmoothScroll = require("vue2-smooth-scroll").default;
     const resize = require("vue-resize-directive");
@@ -65,6 +65,6 @@ export default function(Vue, { head, isClient }) {
   head.link.push({
     rel: "stylesheet",
     href:
-      "https://fonts.googleapis.com/css?family=Gothic+A1:400,600,700&display=swap"
+      "https://fonts.googleapis.com/css?family=Gothic+A1:400,600,700&display=swap",
   });
 }

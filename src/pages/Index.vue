@@ -46,7 +46,7 @@
       <p
         v-observe-visibility="showDesignerLine"
         :class="[
-          shouldShowDesignerLine ? 'opacity-75' : 'opacity-0 shift-y-16'
+          shouldShowDesignerLine ? 'opacity-75' : 'opacity-0 shift-y-16',
         ]"
         class="text-sm mt-104 ml-104 md:ml-160 transition"
       >
@@ -126,22 +126,22 @@ export default Vue.extend({
   components: {
     AllProjects,
     AllTalks,
-    AllInterviews
+    AllInterviews,
   },
   data() {
     return {
       visibleSections: [],
-      shouldShowDesignerLine: false
+      shouldShowDesignerLine: false,
     };
   },
   methods: {
     onVisibilityChange(index) {
       return {
-        callback: isVisible => {
+        callback: (isVisible) => {
           if (isVisible) {
             this.visibleSections.push(index);
           } else {
-            this.visibleSections = this.visibleSections.filter(item => {
+            this.visibleSections = this.visibleSections.filter((item) => {
               return item !== index;
             });
           }
@@ -151,14 +151,14 @@ export default Vue.extend({
           bus.$emit("update:scrollspy", this.visibleSections[0]);
         },
         intersection: {
-          threshold: 0.3
+          threshold: 0.3,
         },
-        throttle: 300
+        throttle: 300,
       };
     },
     showDesignerLine(isVisible) {
       this.shouldShowDesignerLine = isVisible;
-    }
-  }
+    },
+  },
 });
 </script>

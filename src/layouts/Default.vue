@@ -93,13 +93,13 @@ import SocialLinks from "@/partials/SocialLinks";
 export default Vue.extend({
   metaInfo: {
     bodyAttrs: {
-      class: "bg-night overflow-x-hidden"
-    }
+      class: "bg-night overflow-x-hidden",
+    },
   },
   components: {
     ScrollSpy,
     SocialLinks,
-    TopBar
+    TopBar,
   },
   data() {
     return {
@@ -107,13 +107,13 @@ export default Vue.extend({
       items: [
         { label: "Projects", link: "#projects" },
         { label: "Talks", link: "#talks" },
-        { label: "Interviews", link: "#interviews" }
+        { label: "Interviews", link: "#interviews" },
       ],
-      active: 0
+      active: 0,
     };
   },
   created() {
-    bus.$on("update:scrollspy", index => {
+    bus.$on("update:scrollspy", (index) => {
       this.active = index || 0;
     });
   },
@@ -123,7 +123,7 @@ export default Vue.extend({
     },
     onIntroVisibilityChange(isVisible) {
       this.isIntroVisible = isVisible;
-    }
-  }
+    },
+  },
 });
 </script>

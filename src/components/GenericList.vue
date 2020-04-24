@@ -13,8 +13,8 @@ export default Vue.extend({
   props: {
     items: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 });
 </script>

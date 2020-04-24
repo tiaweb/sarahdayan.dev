@@ -34,15 +34,15 @@ export default Vue.extend({
         {
           label: "Twitter",
           link: "https://twitter.com/frontstuff_io",
-          icon: TwitterIcon
+          icon: TwitterIcon,
         },
         {
           label: "GitHub",
           link: "https://github.com/sarahdayan/",
-          icon: GithubIcon
-        }
-      ]
+          icon: GithubIcon,
+        },
+      ],
     };
-  }
+  },
 });
 </script>
