@@ -28,7 +28,7 @@
     "hex-to-rgb": "1.0.1",
     "postcss-selector-parser": "6.0.2",
     "prettier": "2.0.5",
-    "ts-loader": "7.0.2",
+    "ts-loader": "7.0.3",
     "typescript": "3.8.3"
   }
 }
